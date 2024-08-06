@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts - Puma Brand Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+#products, #tshirts, #jackets, #shoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-info span {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+#map {
+    width: 400px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    #map {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/994/278/non_2x/puma-logo-white-symbol-with-name-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg" alt="Puma Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="tshirts.html">T-Shirts</a>
+                        <a href="jackets.html">Jackets</a>
+                        <a href="shoes.html">Shoes</a>
+                    </div></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <img src="https://as1.ftcdn.net/v2/jpg/01/98/91/58/1000_F_198915883_wnP2aPjQMimDYRtaRUfdS2O1tRwznQxZ.jpg" alt="Love">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/574/977/original/shopping-cart-trolley-icon-vector.jpg" alt="Trolly">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.s6u3fiKZqMwk0d8ALp60twHaH_&pid=Api&P=0&h=180" alt="Logout">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="tshirts">
+            <h1 style="text-align: center;"><ins>SHOES </ins></h1>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/399871/04/sv01/fnd/PNA/fmt/png/FENTY-x-PUMA-Creeper-Phatty-In-Session-Women's-Sneakers" alt="T-Shirt 1">
+                    <div class="product-info">
+                        <p>FENTY x PUMA Creeper<br> Phatty In Session <br>Women's Sneakers<br>$120.00 <span>$30</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/399665/06/sv01/fnd/PNA/fmt/png/ST-Runner-v4-Suede-Men's-Sneakers" alt="T-Shirt 2">
+                    <div class="product-info">
+                        <p>ST Runner v4 Suede<br> Men's Sneakers<br>$65.00 <span>$40</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/397450/02/sv01/fnd/PNA/fmt/png/PUMA-Club-5v5-Lux-OG-Men's-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>PUMA Club 5v5 Lux <br>OG Men's Sneakers <br>$70.00 <span>  $35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                 
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/397487/01/sv01/fnd/PNA/fmt/png/Carina-Street-Lux-Sneakers-Women" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Carina Street Lux <br>Sneakers Women <br>$75.00 <span>  $35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/397449/01/sv01/fnd/PNA/fmt/png/PUMA-Club-5v5-Lux-Men's-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>PUMA Club 5v5 Lux Men's Sneakers <br>$70.00 <span>  $35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/395205/02/sv01/fnd/PNA/fmt/png/Suede-XL-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Suede XL Sneakers<br> $85 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/385852/07/sv01/fnd/PNA/fmt/png/Carina-2.0-Mid-Winter-Women's-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Carina 2.0 Mid Winter<br> Women's Sneakers<br>$80.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/398943/01/sv01/fnd/PNA/fmt/png/PUMA-x-TROLLS-Mayze-Crashed-Little-Kids'-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>PUMA x TROLLS Mayze <br>Crashed Little Kids'<br> Sneakers- $75.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/396841/01/sv01/fnd/PNA/fmt/png/Palermo-Vintage-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Palermo Vintage Sneakers - $90.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/308564/01/sv01/fnd/PNA/fmt/png/Porsche-Legacy-Easy-Rider-Tartan-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Porsche Legacy Easy <br>Rider Tartan Sneakers<br> $100.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/397643/19/sv01/fnd/PNA/fmt/png/Palermo-Women's-Sneakers" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Palermo Women's Sneakers<br> $90.00<span> $35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+
+               
+            </div>
+        </section>
+    </main>
+</body>
+</html>

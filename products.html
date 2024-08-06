@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Puma Brand Website</title>
+    <style>
+          @keyframes a1{
+            0% {background-color: whitesmoke; left: 0px;}
+            10% {background-color: whitesmoke; left: 100px;}
+            20% {background-color: whitesmoke; left: 200px;}
+            30% {background-color: whitesmoke; left: 350px;}
+            40% {background-color: whitesmoke; left: 400px;}
+            50% {background-color: whitesmoke; left: 500px;}
+            60% {background-color: whitesmoke; left: 600px;}
+            70% {background-color: whitesmoke; left: 750px;}
+            80% {background-color: whitesmoke; left: 800px;}
+            90% {background-color: whitesmoke; left: 900px;}
+            100% {background-color: whitesmoke; left: 1000px;}
+           
+          }
+          .b1{
+            background-color: whitesmoke;
+            text-align: center;
+            animation-name: a1;
+            animation-duration: 5s;
+            animation-delay: 1s;
+            height: 60px;
+            width: 350px;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5px; 
+          }
+          .brand-name {
+    display: flex;
+    align-items: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    text-align: center;
+}
+.brand-name img {
+    margin-left: 5px; /* Adjust spacing between text and logo */
+}
+
+
+.search-bar {
+            flex-grow: 1;
+            text-align: center;
+            
+        }
+        .search-bar input {
+            padding: 5px;
+            font-size: 16px;
+            width: 30%;
+        }
+        .icons {
+            display: flex;
+            align-items: center;
+        }
+        .icons img {
+            height: 24px;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+
+
+        #product-category {
+            font-size: 18px; /* Increase the font size */
+            padding: 10px; /* Increase the padding */
+            width: 200px; /* Set a wider width */
+            border-radius: 5px; /* Add some border radius for better appearance */
+            border: 1px solid #ccc; /* Add border */
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/994/278/non_2x/puma-logo-white-symbol-with-name-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg" alt="Puma Logo">
+            </div>
+            <ul class="nav-links">
+               <li><a href="index.html">Home</a></li>
+                <li  class="dropdown">
+                    <a href="products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="tshirts.html">T-Shirts</a>
+                        <a href="jackets.html">Jackets</a>
+                        <a href="shoes.html">Shoes</a>
+                    </div>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <img src="https://as1.ftcdn.net/v2/jpg/01/98/91/58/1000_F_198915883_wnP2aPjQMimDYRtaRUfdS2O1tRwznQxZ.jpg" alt="Love">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/574/977/original/shopping-cart-trolley-icon-vector.jpg" alt="Trolly">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.s6u3fiKZqMwk0d8ALp60twHaH_&pid=Api&P=0&h=180" alt="Logout">
+            </div>
+
+
+        </nav>
+    </header>
+    <main>
+         <div class="b1">
+          <p class="brand-name" style="text-align: center; align-items: center;display: flex;font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 30px;"> PUMA  BRAND<img src="https://1000logos.net/wp-content/uploads/2017/05/PUMA-Logo-1978-1980.png" height="90px" width="120px" style="margin-left: 5px;">
+          </p> </div>
+      
+        <section id="products">
+           <b> <h2 style="font-size: 30px; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Our Products</h2></b>
+
+            <select id="product-category" onchange="navigateToCategory()">
+                <option value="">Select a category</option>
+                <option value="tshirts.html">T-Shirts</option>
+                <option value="jackets.html">Jackets</option>
+                <option value="shoes.html">Shoes</option>
+            </select>
+        </section><br><br>
+         
+        <div class="product-grid" style="background-color: whitesmoke;">
+        <div class="product-item" style="background-color: whitesmoke;">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/847479/48/fnd/PNA/fmt/png/ESS+-Color-Blocked-Big-Kids'-Windbreaker" alt="T-Shirt 3">
+        
+        </div>
+        <div class="product-item">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/382649/02/fnd/IND/fmt/png/PWRFRAME-OP-1-Abstract-Unisex-Sneakers" alt="T-Shirt 3">
+        
+        </div>
+        <div class="product-item">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/627376/24/mod03/fnd/AUS/fmt/png/PUMA-x-TROLLS-Kid's-Tee">
+        
+        </div>
+        <div class="product-item">
+            <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_600,h_600/global/681856/01/mod01/fnd/IND/fmt/png/PUMA-POWER-Colourblock-Youth-Pants">
+        
+        </div>
+        </div>
+
+
+        <div class="b1">
+            <p class="brand-name" style="text-align: center; align-items: center;display: flex;font-family:  Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;font-size: 30px;"> PUMA  BRAND<img src="https://1000logos.net/wp-content/uploads/2017/05/PUMA-Logo-1978-1980.png" height="90px" width="120px" style="margin-left: 5px;">
+            </p> </div>
+        
+    </main>
+    <script>
+        function navigateToCategory() {
+            const category = document.getElementById('product-category').value;
+            if (category) {
+                window.location.href = category;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirts - Puma Brand Website</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: black;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+main {
+    padding: 20px;
+}
+
+#home img {
+    width: 100%;
+    height: auto;
+}
+
+#products, #tshirts, #jackets, #shoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+
+.product-item img {
+    width: 100%;
+    height: auto;
+}
+
+.product-info {
+    margin-top: 10px;
+}
+
+.product-info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.product-info span {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 14px;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff6347;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 800px;
+}
+
+#map {
+    width: 400px;
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    #map {
+        width: 100%;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="https://static.vecteezy.com/system/resources/previews/010/994/278/non_2x/puma-logo-white-symbol-with-name-clothes-design-icon-abstract-football-illustration-with-black-background-free-vector.jpg" alt="Puma Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li  class="dropdown">
+                    <a href="products.html">Products</a>
+                    <div class="dropdown-content">
+                        <a href="tshirts.html">T-Shirts</a>
+                        <a href="jackets.html">Jackets</a>
+                        <a href="shoes.html">Shoes</a>
+                    </div></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search...">
+            </div>
+            <div class="icons">
+                <img src="https://as1.ftcdn.net/v2/jpg/01/98/91/58/1000_F_198915883_wnP2aPjQMimDYRtaRUfdS2O1tRwznQxZ.jpg" alt="Love">
+                <img src="https://static.vecteezy.com/system/resources/previews/000/574/977/original/shopping-cart-trolley-icon-vector.jpg" alt="Trolly">
+                <img src="https://tse4.mm.bing.net/th?id=OIP.s6u3fiKZqMwk0d8ALp60twHaH_&pid=Api&P=0&h=180" alt="Logout">
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="tshirts">
+            <h1 style="text-align: center;"><ins>JACKETS</ins> </h1>
+            <div class="product-grid">
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/623797/01/mod01/fnd/PNA/fmt/png/Scuderia-Ferrari-Men's-Motorsport-Race-Hooded-Sweat-Jacket" alt="T-Shirt 1">
+                    <div class="product-info">
+                        <p>Scuderia Ferrari Men's <br>Motorsport Race Hooded <br>Sweat Jacket <br> $120.00 <span>$30</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/625198/02/mod01/fnd/PNA/fmt/png/Scuderia-Ferrari-Race-Iconic-T7-Men's-Motorsport-Jacket" alt="T-Shirt 2">
+                    <div class="product-info">
+                        <p>Scuderia Ferrari Race Iconic<br> T7 Men's Motorsport Jacket<br> $100.00 <span> $40</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/524142/01/mod01/fnd/PNA/fmt/png/PUMA-Fit-Women's-Woven-Fashion-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>PUMA Fit Women's Woven<br> Fashion Jacket <br>$110.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/589423/01/mod01/fnd/PNA/fmt/png/Iconic-T7-Men's-Track-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Iconic T7 Men's <br>Track Jacket<br> $150.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/627994/22/mod01/fnd/PNA/fmt/png/ICONIC-Women's-T7-Track-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>ICONIC Women's T7<br> Track Jacket <br> $120.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/778745/10/mod01/fnd/PNA/fmt/png/C.D.-Guadalajara-ftblCULTURE-Men's-Hooded-Sweat-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>C.D. Guadalajara ftblCULTURE<br> Men's Hooded Sweat Jacket <br>$155.60 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/627833/05/mod01/fnd/PNA/fmt/png/Mercedes-AMG-Petronas-F1%C2%AE-Team-x-Mad-Dog-Jones-Men's-Statement-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Mercedes-AMG Petronas F1® <br>Team x Mad Dog Jones<br> Men's Statement Jacket<br>$195.99 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/524816/01/mod01/fnd/PNA/fmt/png/PUMA-FIT-%22Move%22-Women's-Woven-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>PUMA FIT "Move" Women's<br> Woven Jacket <br> $299.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/685553/01/fnd/PNA/fmt/png/Venice-Beach-Basketball-League-T-73-Men's-Basketball-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>Venice Beach Basketball<br> League T-73 Men's Basketball <br>Jacket <br> $149.99 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/625406/15/fnd/PNA/fmt/png/CELLERATOR-Women's-Relaxed-Jacket" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p>CELLERATOR Women's <br>Relaxed Jacket <br> $100.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="https://images.puma.com/image/upload/f_auto,q_auto,b_rgb:fafafa,w_500,h_500/global/847479/48/fnd/PNA/fmt/png/ESS+-Color-Blocked-Big-Kids'-Windbreaker" alt="T-Shirt 3">
+                    <div class="product-info">
+                        <p> ESS+ Color-Blocked Big <br>Kids' Windbreaker <br> $69.00 <span>$35</span></p>
+                        <button>Shop Now</button>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </section>
+    </main>
+</body>
+</html>
